@@ -13,7 +13,7 @@ async function getQuote(){
         let text = quote[index].text;
         let author = quote[index].author;
         
-        if (author == "")
+        if (author == null)
             author = "Unknown";
         document.querySelector(".quoteText").innerHTML= text;
         document.querySelector(".quoteAuthor").innerHTML= author;
