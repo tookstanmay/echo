@@ -12,6 +12,7 @@ async function getQuote(){
         let index = randomValue(quote.length);
         let text = quote[index].text;
         let author = quote[index].author;
+        author = author.substring(0, author. length - 10);
         
         if (author == null)
             author = "Unknown";
